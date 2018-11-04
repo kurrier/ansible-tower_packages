@@ -6,8 +6,8 @@ RHEL Package Management
 Requirements
 ------------
 
-* Ansible Tower
-* kurrier.packages 
+* [Ansible Tower](https://www.ansible.com/products/tower)
+* [kurrier.packages](https://github.com/kurrier/ansible-role_packages) 
 
 Role Variables
 --------------
