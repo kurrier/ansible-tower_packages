@@ -14,7 +14,7 @@ Role Variables
 
 * target: host - Set host/group to run on
 
-Check kurrier.packages for more vars
+Check [kurrier.packages](https://github.com/kurrier/ansible-role_packages) for more vars
 
 License
 -------
