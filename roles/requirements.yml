@@ -1,0 +1,5 @@
+- src: git@github.com:kurrier/ansible-role_packages.git
+  scm: git
+
+- src: git@github.com:kurrier/ansible-role_alerts.git
+  scm: git

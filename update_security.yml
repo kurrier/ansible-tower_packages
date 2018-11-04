@@ -1,0 +1,35 @@
+---
+
+- name: LC Packages Playbook
+  hosts: "{{ target }}"
+  become: no
+  gather_facts: no
+
+#  pre_tasks:
+#   - name: Gather Facts
+#     setup:
+#     become: no
+
+  vars:
+    packages_function_report: true
+    packages_function_alert: true
+    packages_function_remove: false
+
+    packages_reboot: false
+    packages_security: true    
+
+    msg_function_alert: true
+
+  pre_tasks:
+    - setup:
+        filter: ansible_hostname
+    - setup:
+        filter: ansible_distribution*
+    - setup:
+        filter: ansible_date_time*
+
+  roles:
+    - packages
+    - { role: alerts, when: msg_alert_txt is defined }
+ 
+...
