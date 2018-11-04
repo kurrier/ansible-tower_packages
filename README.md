@@ -1,9 +1,7 @@
-Ansible Tower: packages
-
-Projects Name
+Ansible Tower Project: Packages
 =========
 
-Packages
+RHEL Package Management
 
 Requirements
 ------------
